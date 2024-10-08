@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Side ScrollBar Style */
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track {
+    background-color: #464a4f;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #3a497b;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #00000080 inset;
+}
+/* Loading Spinner Style */
+#overLayer {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 7100;
+    background: #000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+i {
+    cursor: pointer;
+    transition: .3s ease;
+}
+i:hover {
+    color: red;
+}
+.loader {
+    z-index: 7700;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    color: #00ff1e;
+}
+
+body {
+    color: #fff;
+    background: #272b30;
+    overflow-x: hidden;
+}
+
+/* Home Section Style */
+/* Navbar Style */
+nav {
+    background-color: #3a497b !important;
+    margin-inline: auto;
+    margin-top: -30px;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+
+nav:hover {
+    box-shadow: 0 0 10px #fff;
+}
+
+.nav-item a {
+    color: #fff;
+}
+
+.nav-item .active,
+.nav-item a:hover {
+    color: #09c !important;
+    transition: color 0.5s;
+}
+
+/* Game Cards Style */
+.Games .card {
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+.Games .card:hover {
+    filter: grayscale(0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff !important;
+}
+
+p,
+span {
+    color: aliceblue;
+}
+
+footer span {
+    background: #464a4f;
+}
